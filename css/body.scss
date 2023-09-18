@@ -1,0 +1,181 @@
+.p-body {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #fff;
+
+  &__bg {
+    background-color: #FFF8F2;
+
+    &--02 {
+      background-image: url(../image/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.p-concept {
+  &__img {
+    margin-top: 40px;
+  }
+
+  &__titletext {
+    color: #E48B13;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 50px;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+    text-shadow: 1px 2px 3px #808080;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: #808080;
+
+    +.p-concept__text {
+      margin-top: 10px;
+    }
+  }
+}
+
+.p-menu {
+  &__text {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 2.5;
+    color: #000;
+  }
+
+  &__item {
+    width: calc(calc(100% / 3) - 20px);
+    margin-top: 20px;
+    margin-left: 20px;
+
+    @media screen and (max-width:414px) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    &s {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -10px;
+      margin-left: -20px;
+
+      @media screen and (max-width:414px) {
+        margin-left: 0;
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__name {
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #000;
+
+    &__jp {
+      font-size: 1.4rem;
+      margin-top: 3px;
+      color: #000;
+    }
+  }
+
+  &__price {
+    font-size: 1.4rem;
+    margin-top: 8px;
+    color: #000;
+  }
+}
+
+.p-access {
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  &__area {
+    padding: 50px;
+    width: 50%;
+
+    @media screen and (max-width:414px) {
+      width: 100%;
+    }
+  }
+
+  &__map {
+    width: 50%;
+
+    iframe {
+      width: 500px;
+      height: 430px;
+    }
+
+    @media screen and (max-width:414px) {
+      width: 100%;
+
+      iframe {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    color: #E48B13;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  &__open {
+    margin-top: 50px;
+
+    @media screen and (max-width:414px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: #000;
+  }
+
+  &__btn {
+    margin-top: 50px;
+
+    a {
+      background-color: #E48B13;
+      color: #fff;
+      display: inline-block;
+      width: 280px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.6rem;
+      position: relative;
+      transition: all 0.3s;
+
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: '\f35d';
+        right: 70px;
+        position: absolute;
+      }
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

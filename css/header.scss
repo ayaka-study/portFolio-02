@@ -1,0 +1,143 @@
+.l-header {
+  transition: opacity 0.5s ease;
+
+  &__nav {
+    width: 100%;
+    background-color: #E48B13;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    transform: translateY(-100%);
+    transition: 0.6s;
+    z-index: 30;
+    padding: 80px 0 30px 0;
+    height: 76vh;
+
+    &.active {
+      display: block;
+      transform: translateY(0%);
+    }
+
+    li {
+      padding: 10px 0;
+      text-align: left;
+
+      @media screen and (max-width:414px) {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.4rem;
+      }
+    }
+  }
+
+  &__hamburger {
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 25px;
+    z-index: 40;
+
+    span {
+      width: 30px;
+      height: 1px;
+      background-color: #fff;
+      position: absolute;
+      left: 6px;
+      transition: 0.5s ease-in-out;
+
+      &:nth-child(1) {
+        top: 11px;
+      }
+
+      &:nth-child(2) {
+        top: 21px;
+      }
+
+      &:nth-child(3) {
+        top: 31px;
+      }
+    }
+
+    &.active {
+      span {
+        &:nth-child(1) {
+          top: 18px;
+          left: 18px;
+          transform: translateY(6px) rotate(-45deg);
+          width: 30px;
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          top: 30px;
+          left: 18px;
+          transform: translateY(-6px) rotate(45deg);
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__logo {
+    margin-right: 50px;
+
+    @media screen and (max-width:414px) {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width:414px) {
+      margin-right: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__tel {
+    @media screen and (max-width:414px) {
+      margin-top: 20px;
+    }
+
+    a {
+      position: relative;
+      font-size: 18px;
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        background-image: url(/image/tel_icon.png);
+        width: 15px;
+        height: 15px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        left: -25px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,123 @@
+.l-header {
+  transition: opacity 0.5s ease;
+}
+.l-header__nav {
+  width: 100%;
+  background-color: #E48B13;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  transform: translateY(-100%);
+  transition: 0.6s;
+  z-index: 30;
+  padding: 80px 0 30px 0;
+  height: 76vh;
+}
+.l-header__nav.active {
+  display: block;
+  transform: translateY(0%);
+}
+.l-header__nav li {
+  padding: 10px 0;
+  text-align: left;
+}
+@media screen and (max-width: 414px) {
+  .l-header__nav li {
+    text-align: center;
+  }
+}
+.l-header__nav li a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+.l-header__hamburger {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 25px;
+  z-index: 40;
+}
+.l-header__hamburger span {
+  width: 30px;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  left: 6px;
+  transition: 0.5s ease-in-out;
+}
+.l-header__hamburger span:nth-child(1) {
+  top: 11px;
+}
+.l-header__hamburger span:nth-child(2) {
+  top: 21px;
+}
+.l-header__hamburger span:nth-child(3) {
+  top: 31px;
+}
+.l-header__hamburger.active span:nth-child(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 30px;
+}
+.l-header__hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.l-header__hamburger.active span:nth-child(3) {
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 30px;
+}
+.l-header__items {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-header__logo {
+  margin-right: 50px;
+}
+@media screen and (max-width: 414px) {
+  .l-header__logo {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .l-header__item {
+    margin-right: 0;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .l-header__tel {
+    margin-top: 20px;
+  }
+}
+.l-header__tel a {
+  position: relative;
+  font-size: 18px;
+  text-decoration: none;
+}
+.l-header__tel a:before {
+  content: "";
+  position: absolute;
+  background-image: url(/image/tel_icon.png);
+  width: 15px;
+  height: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: -25px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}/*# sourceMappingURL=header.css.map */

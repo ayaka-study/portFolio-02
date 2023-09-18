@@ -1,0 +1,158 @@
+.p-body {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #fff;
+}
+.p-body__bg {
+  background-color: #FFF8F2;
+}
+.p-body__bg--02 {
+  background-image: url(../image/mike-kenneally-TD4DBagg2wE-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.p-concept__img {
+  margin-top: 40px;
+}
+.p-concept__titletext {
+  color: #E48B13;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 50px;
+}
+.p-concept h3 {
+  font-size: 3.6rem;
+  text-shadow: 1px 2px 3px #808080;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.p-concept__text {
+  font-size: 1.4rem;
+  color: #808080;
+}
+.p-concept__text + .p-concept__text {
+  margin-top: 10px;
+}
+
+.p-menu__text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 40px;
+  line-height: 2.5;
+  color: #000;
+}
+.p-menu__item {
+  width: calc(33.3333333333% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+@media screen and (max-width: 414px) {
+  .p-menu__item {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+.p-menu__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -10px;
+  margin-left: -20px;
+}
+@media screen and (max-width: 414px) {
+  .p-menu__items {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+.p-menu__name {
+  margin-top: 10px;
+  font-size: 1.8rem;
+  font-weight: normal;
+  color: #000;
+}
+.p-menu__name__jp {
+  font-size: 1.4rem;
+  margin-top: 3px;
+  color: #000;
+}
+.p-menu__price {
+  font-size: 1.4rem;
+  margin-top: 8px;
+  color: #000;
+}
+
+.p-access__flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+}
+.p-access__area {
+  padding: 50px;
+  width: 50%;
+}
+@media screen and (max-width: 414px) {
+  .p-access__area {
+    width: 100%;
+  }
+}
+.p-access__map {
+  width: 50%;
+}
+.p-access__map iframe {
+  width: 500px;
+  height: 430px;
+}
+@media screen and (max-width: 414px) {
+  .p-access__map {
+    width: 100%;
+  }
+  .p-access__map iframe {
+    display: none;
+  }
+}
+.p-access__title {
+  color: #E48B13;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.p-access__open {
+  margin-top: 50px;
+}
+@media screen and (max-width: 414px) {
+  .p-access__open {
+    margin-top: 30px;
+  }
+}
+.p-access__text {
+  font-size: 1.4rem;
+  color: #000;
+}
+.p-access__btn {
+  margin-top: 50px;
+}
+.p-access__btn a {
+  background-color: #E48B13;
+  color: #fff;
+  display: inline-block;
+  width: 280px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6rem;
+  position: relative;
+  transition: all 0.3s;
+}
+.p-access__btn a:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f35d";
+  right: 70px;
+  position: absolute;
+}
+.p-access__btn a:hover {
+  opacity: 0.7;
+}/*# sourceMappingURL=body.css.map */

@@ -1,0 +1,53 @@
+//ブレイクポイントを指定
+
+$pc :1080px;
+$tab: 834px;
+$sp: 414px;
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($sp)) {
+    @content;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  letter-spacing: normal;
+}
+
+
+.l-inner {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+//フォントカラー
+$fc-white : #fff;
+
+//背景カラー
+$bg-black: #000;

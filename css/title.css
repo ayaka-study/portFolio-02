@@ -1,0 +1,29 @@
+.l-title {
+  text-align: center;
+  position: relative;
+}
+.l-title h2 {
+  font-size: 5.6rem;
+  letter-spacing: 3px;
+  font-weight: normal;
+  color: #424242;
+}
+.l-title__eng {
+  font-size: 1.6rem;
+  color: #E48B13;
+}
+.l-title__jp {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #424242;
+}
+.l-title img {
+  position: absolute;
+  width: auto;
+  top: 70%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+}
+.l-title--white h2 {
+  color: #fff;
+}/*# sourceMappingURL=title.css.map */

@@ -1,0 +1,36 @@
+.l-title {
+  h2 {
+    font-size: 5.6rem;
+    letter-spacing: 3px;
+    font-weight: normal;
+    color: #424242;
+  }
+
+  text-align: center;
+  position: relative;
+
+  &__eng {
+    font-size: 1.6rem;
+    color: #E48B13;
+  }
+
+  &__jp {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #424242;
+  }
+
+  img {
+    position: absolute;
+    width: auto;
+    top: 70%;
+    left: 63%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--white {
+    h2 {
+      color: #fff;
+    }
+  }
+}

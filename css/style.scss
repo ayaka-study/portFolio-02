@@ -1,0 +1,11 @@
+// 共通scssファイル
+@import 'reset.scss';
+@import 'mixin.scss';
+
+
+// 各ページのscssファイル
+@import 'header.scss';
+@import 'main.scss';
+@import 'title.scss';
+@import 'body.scss';
+@import 'footer.scss'
